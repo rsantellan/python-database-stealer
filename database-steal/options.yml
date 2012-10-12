@@ -5,9 +5,9 @@ program:
 databases:
     #Los posibles tipos son: sqlite, mysql
     type: 'sqlite'
-    limit: 10
+    limit: 20
     sqlite3:
-        name: 'agenda.db'
+        name: 'database.db'
     mysql:
         host: localhost
         user: root

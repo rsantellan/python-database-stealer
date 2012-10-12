@@ -22,5 +22,6 @@ CREATE TABLE conectores (
     "port" TEXT NOT NULL,
     "user" TEXT NOT NULL,
     "password" TEXT NOT NULL,
-    "schema" TEXT NOT NULL
+    "schema" TEXT NOT NULL,
+    "master" INTEGER NOT NULL DEFAULT(0)
 );

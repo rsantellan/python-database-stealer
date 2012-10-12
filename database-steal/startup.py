@@ -1,7 +1,7 @@
 #! /usr/bin/python
 
 from options import setup_options
-
+from stealer_terminal import StealerTerminal
 #from options import AgendaOptions
 #from agenda_memory import AgendaMemory
 #from agenda_database import AgendaDatabase
@@ -12,8 +12,8 @@ from options import setup_options
 #print setup_options.moptions
 
 if setup_options.getRunAs() == "terminal":
-    #agendaDatabase = AgendaDatabase()
-    #agendaDatabase.init_agenda()
+    terminal = StealerTerminal()
+    terminal.init_stealer()
     print "terminal"
 elif setup_options.getRunAs() == "gtk":
     #agenda = AgendaWindow()
