@@ -1,0 +1,16 @@
+#Config
+program:
+    #Las posibles opciones son: terminal, gtk
+    run_as: 'terminal'
+databases:
+    #Los posibles tipos son: sqlite, mysql
+    type: 'sqlite'
+    limit: 10
+    sqlite3:
+        name: 'agenda.db'
+    mysql:
+        host: localhost
+        user: root
+        pass: root
+        schema: python_agenda
+
